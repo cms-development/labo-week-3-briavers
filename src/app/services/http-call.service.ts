@@ -15,6 +15,6 @@ export class HttpCallService {
     return this.http.get(`${this.baseUrl}/rest_recipes`)
   }
   getRecipe(id){
-    return this.http.get(`${this.baseUrl}/game/${id}`)
+    return this.http.get(`${this.baseUrl}/rest_recipes/${id}`)
   }
 }

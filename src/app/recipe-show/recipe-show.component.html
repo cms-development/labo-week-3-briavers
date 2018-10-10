@@ -1,3 +1,30 @@
-<p>
-  recipe-show works!
-</p>
+<div class="container">
+  <div class="row" *ngIf="recipe">
+    <div class="col-12">
+      <h1>The Title: {{recipe.title.rendered}} </h1>
+    </div>
+    <div class="col-sm-12 col-md-9 col-lg-6">
+      <p [innerHTML]='recipe.content.rendered'></p>
+
+    </div>
+    <div class="col-sm-12 col-md-3 col-lg-6">
+      <div class="row">
+        <div class="col-6">
+          <img src="{{recipe.acf.image.url}}" alt="" class="full-width">
+        </div>
+        <div class="col-6">
+          <img src="{{recipe.acf.aditional_image_2.url}}" alt="" class="full-width">
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+  <div class="row" *ngIf="!recipe">
+    <h1>The recipe was not found </h1>
+  </div>
+</div>

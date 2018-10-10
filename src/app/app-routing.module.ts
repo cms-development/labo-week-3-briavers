@@ -18,6 +18,10 @@ const routes: Routes = [
     component: HomeComponent
   },
   {
+    path: 'recipes',
+    component: HomeComponent
+  },
+  {
     path: 'recipe/:id',
     component: RecipeShowComponent,
   },
