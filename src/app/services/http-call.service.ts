@@ -7,7 +7,7 @@ import { HttpClient } from '@angular/common/http';
 })
 export class HttpCallService {
   
-  private baseUrl = 'http://briaverscmslabo01.local/wp-json/wp/v2'
+  private baseUrl = 'https://cmsdevelopment.be/briavers/wp-json/wp/v2'
   constructor(private http: HttpClient) { }
 
 
